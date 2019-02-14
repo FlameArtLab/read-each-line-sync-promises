@@ -1,18 +1,27 @@
-# read-each-line-sync
+# Read each line synchronously with JS promises 
 
-Read file line by line, synchronously.
+Read file line by line synchronously in Promise style.
 
 ## Install
 
-    npm install read-each-line-sync
+    npm install read-each-line-sync-promises
 
 ## Example
 
 ```javascript
-var readEachLineSync = require('read-each-line-sync')
+var readEachLineSync = require('read-each-line-sync-promises')
 
-readEachLineSync('test.txt', 'utf8', function(line) {
+readEachLineSync('test.txt', 'utf8', async function (line) {
+  
   console.log(line)
+  
+  if(await LongOperation) 
+    return false; // Stop reading
+  else
+    return true; // Continue reading
+  
+}).then(()=> {
+    ...
 })
 ```
 
@@ -35,7 +44,9 @@ readEachLineSync('test.txt', 'utf-8', '\n', function(line) {
 
 ## Credits
 
-Author: [Geza Kovacs](http://github.com/gkovacs)
+Author: [FlameArt](https://github.com/FlameArtLab)
+
+Based on `read-each-line-sync` by [Geza Kovacs](http://github.com/gkovacs)
 
 Based on [readLineSync](https://gist.github.com/Basemm/9700229)
 

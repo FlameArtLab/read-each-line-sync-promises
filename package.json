@@ -1,0 +1,31 @@
+{
+  "name": "read-each-line-sync-promises",
+  "version": "1.0.7",
+  "description": "Read file line by line, synchronously. In Promise / await style",
+  "main": "readEachLineSync.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FlameArtLab/read-each-line-sync-promises.git"
+  },
+  "keywords": [
+    "read",
+    "file",
+    "line",
+    "sync",
+    "promise",
+    "async",
+    "await"
+  ],
+  "author": "FlameArt (https://github.com/FlameArtLab)",
+  "contributors": [
+    {"name":"Geza Kovacs","url":"http://github.com/gkovacs"}
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FlameArtLab/read-each-line-sync/issues"
+  },
+  "homepage": "https://github.com/FlameArtLab/read-each-line-sync"
+}
