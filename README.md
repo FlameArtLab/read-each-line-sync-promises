@@ -4,7 +4,7 @@ Read file line by line synchronously in Promise style.
 
 ## Install
 
-    npm install read-each-line-sync-promises
+    npm install FlameArtLab/read-each-line-sync-promises
 
 ## Example
 
